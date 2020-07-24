@@ -1,11 +1,29 @@
 .header {
-    padding: 8rem 10rem;
+    padding: 8rem 15rem;
     background-color: $color-violet-dark;
+    position: relative;
+
+    &__bg-image {
+        position: absolute;
+        z-index: 1;
+        height: 85%;
+
+        &--right {
+            top: 0;
+            right: 0;
+        }
+
+        &--left {
+            top: 30vw;
+            left: 0;
+
+        }
+    }
 
     &__content {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: min-content;
+        grid-template-rows: 30vw;
         grid-column-gap: 3rem;
         position: relative;
 
@@ -23,7 +41,7 @@
 
     &__text {
         grid-column: 1/2;
-        margin-top: 5rem;
+        align-self: center;
         color: $color-light-grey;
     }
 
@@ -38,6 +56,5 @@
 
     &__image {
         width: 100%;
-        margin-bottom: -25rem;
     }
 }

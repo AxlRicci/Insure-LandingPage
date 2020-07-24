@@ -21,12 +21,21 @@ body {
 .heading-1 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
-  font-size: 8.5rem;
+  font-size: 7.5rem;
   line-height: 1; }
   .heading-1--light {
     color: #fafafa; }
   .heading-1--dark {
     color: #2b272f; }
+
+.paragraph {
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  font-weight: 400; }
+  .paragraph--light {
+    color: #fafafa; }
+  .paragraph--dark {
+    color: #2d2640; }
 
 .u-mb-xs {
   margin-bottom: 1rem; }
@@ -74,12 +83,23 @@ body {
   grid-column: full-start / full-end; }
 
 .header {
-  padding: 8rem 10rem;
-  background-color: #2d2640; }
+  padding: 8rem 15rem;
+  background-color: #2d2640;
+  position: relative; }
+  .header__bg-image {
+    position: absolute;
+    z-index: 1;
+    height: 85%; }
+    .header__bg-image--right {
+      top: 0;
+      right: 0; }
+    .header__bg-image--left {
+      top: 30vw;
+      left: 0; }
   .header__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content;
+    grid-template-rows: 30vw;
     grid-column-gap: 3rem;
     position: relative; }
     .header__content::before {
@@ -93,7 +113,7 @@ body {
       background-color: #fafafa; }
   .header__text {
     grid-column: 1/2;
-    margin-top: 5rem;
+    align-self: center;
     color: #fafafa; }
   .header__image-box {
     width: 100%;
@@ -101,8 +121,7 @@ body {
     justify-self: end;
     text-align: right; }
   .header__image {
-    width: 100%;
-    margin-bottom: -25rem; }
+    width: 100%; }
 
 .navigation {
   grid-column: full-start / full-end;

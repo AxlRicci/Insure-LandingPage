@@ -9,7 +9,7 @@ body {
 .heading-1 {
     font-family: $font-family-heading;
     font-weight: 400;
-    font-size: 8.5rem;
+    font-size: 7.5rem;
     line-height: 1;
 
 
@@ -19,5 +19,19 @@ body {
 
     &--dark {
         color: $color-violet-dark-2;
+    }
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    font-family: $font-family-body;
+    font-weight: $font-weight-body-regular;
+
+    &--light {
+        color: $color-light-grey;
+    }
+
+    &--dark {
+        color: $color-violet-dark;
     }
 }
