@@ -1,0 +1,17 @@
+.feature {
+    padding: 30rem 15rem 5rem 15rem;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        width: 20%;
+        height: 1px;
+        background-color: $color-violet-grey;
+    }
+}
