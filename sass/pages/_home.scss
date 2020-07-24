@@ -15,3 +15,23 @@
         background-color: $color-violet-grey;
     }
 }
+
+.find-more {
+    background-color: $color-violet-dark;
+    margin: 5rem 15rem;
+    padding: 8rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 18rem;
+    align-items: center;
+    justify-items: end;
+    position: relative;
+
+
+    &__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+}
