@@ -1,3 +1,72 @@
 .footer {
-    grid-column: full-start / full-end;
+    background-color: $color-light-grey;
+    padding: 8rem 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 3rem;
+    position: relative;
+
+    &__bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    &__logo {
+        z-index: 1;
+    }
+
+    &__social-list {
+        grid-column: 2/3;
+        justify-self: end;
+        z-index: 1;
+    }
+
+    &__social-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__nav {
+        border-top: 1px solid $color-violet-grey;
+        padding-top: 5rem;
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        z-index: 1;
+    }
+
+    &__nav-title {
+        font-size: 1.6rem;
+        font-weight: $font-weight-body-bold;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        font-size: $font-size-body;
+        font-weight: $font-weight-body-bold;
+        text-transform: uppercase;
+        color: $color-violet-dark;
+    }
+
+
+
 }
