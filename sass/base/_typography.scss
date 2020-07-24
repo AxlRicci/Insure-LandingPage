@@ -5,3 +5,19 @@ body {
     line-height: 1.7;
     color: $color-violet-grey;
 }
+
+.heading-1 {
+    font-family: $font-family-heading;
+    font-weight: 400;
+    font-size: 8.5rem;
+    line-height: 1;
+
+
+    &--light {
+        color: $color-light-grey;
+    }
+
+    &--dark {
+        color: $color-violet-dark-2;
+    }
+}

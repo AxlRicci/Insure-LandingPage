@@ -1,0 +1,43 @@
+.header {
+    padding: 8rem 10rem;
+    background-color: $color-violet-dark;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content;
+        grid-column-gap: 3rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 15rem;
+            height: 1px;
+            background-color: $color-light-grey;
+        }
+    }
+
+    &__text {
+        grid-column: 1/2;
+        margin-top: 5rem;
+        color: $color-light-grey;
+    }
+
+
+    &__image-box {
+        width: 100%;
+        grid-column: 2/3;
+        justify-self: end;
+        text-align: right;
+       
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: -25rem;
+    }
+}
