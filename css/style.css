@@ -58,6 +58,18 @@ body {
 .u-mt-xl {
   margin-top: 8rem; }
 
+.btn {
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  font-size: 1.6rem; }
+  .btn--light {
+    border: 1px solid #fafafa;
+    color: #fafafa; }
+  .btn--dark {
+    border: 1px solid #2b272f;
+    color: #2b272f; }
+
 .footer {
   grid-column: full-start / full-end; }
 
