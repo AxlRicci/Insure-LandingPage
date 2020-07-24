@@ -28,7 +28,7 @@
 
         &:hover {
             color: $color-violet-dark;
-            font-weight: 700;
+            text-shadow: 0 0 .65px $color-violet-dark, 0 0 .65px $color-violet-dark;
         }
     }
 }

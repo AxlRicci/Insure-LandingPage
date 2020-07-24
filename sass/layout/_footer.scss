@@ -26,9 +26,15 @@
     &__social-icon {
         width: 2.5rem;
         height: 2.5rem;
+        transition: filter .2s;
 
         &:not(:last-child) {
             margin-right: 1rem;
+        }
+
+        &:hover,
+        &:active {
+            filter: brightness(0%);
         }
     }
 
@@ -65,6 +71,11 @@
         font-weight: $font-weight-body-bold;
         text-transform: uppercase;
         color: $color-violet-dark;
+
+        &:hover,
+        &:active {
+            border-bottom: 1px solid $color-violet-dark;
+        }
     }
 
 

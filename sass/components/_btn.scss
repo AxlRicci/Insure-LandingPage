@@ -5,14 +5,27 @@
     font-size: 1.6rem;
     font-weight: 700;
     z-index: 10;
+    transition: all .2s;
 
     &--light {
         border: 1.5px solid $color-light-grey;
         color: $color-light-grey;
+
+        &:hover,
+        &:active {
+            background-color: $color-light-grey;
+            color: $color-violet-dark-2;
+        }
     }
 
     &--dark {
         border: 1.5px solid $color-violet-dark-2;
         color: $color-violet-dark-2;
+
+        &:hover,
+        &:active {
+            background-color: $color-violet-dark-2;
+            color: $color-light-grey;
+        }
     }
 }
