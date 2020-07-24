@@ -1,4 +1,34 @@
 .navigation {
-    grid-column: full-start / full-end;
-    grid-row: 1/2;
+    height: 15vh;
+    display: flex;
+    padding: 0 15rem;
+    align-items: center;
+    justify-content: space-between;
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-violet-grey;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-violet-dark;
+            font-weight: 700;
+        }
+    }
 }
